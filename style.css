@@ -1,0 +1,329 @@
+
+/*BASIC*/
+* {
+    box-sizing:border-box;
+    }
+
+    .soustitre{
+        text-align: center;
+        font-size: 1.5em;
+        color : #ECB05A;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+
+
+    section img {
+        float:none;
+        margin-left: 00%;/*ça decale toutes les images et pas que les celles de "section"*/
+        border-radius: 4px;
+    }
+
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        color: #ECB05A;
+        font-family: 'Thin 100', sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        background: linear-gradient( #062334, #123F5A);
+    }
+
+   a {
+    color: inherit;
+    transition: 0.25s all ease-in-out;
+    text-decoration: none;
+    }
+
+    a.button {
+        align-items: center;
+        background-color: #ECB05A;
+        border: 2px solid #ECB05A;
+        border-radius: 4px;
+        color: #062334;
+        cursor: pointer;
+        display: inline-flex;
+        padding: 0.25rem 0.75rem;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out;
+    }
+
+    a.button:hover,
+    a.button:focus {
+        background-color: #ECD1AA; /*couleur du bouton qd on a la sourit dessus*/
+        box-shadow: 0 0 2px 2px #D3E3E6;
+    }
+
+    a.button:focus {
+        outline: 1px solid #ECD1AA;/*qd on a cliqué sur le button c la couleur autour qui reste*/
+    }
+
+    a.button:visited {
+        color: #fff;
+    }
+
+    ul {
+        margin: 0 0 0rem;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    li {
+        margin-left: 0%;
+        display: inline-block;
+        padding: auto;
+        /*align-items: center;*/
+        
+
+    }
+
+
+    img {
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .imggg {
+        border-radius: 50%;
+    }
+
+    p 
+    {
+        margin: 0 0 .5rem;
+    }
+
+header {
+    /*padding: 1rem 2rem;*/
+    text-align: center;
+    display: flex; 
+    padding-bottom: 50px;
+}
+
+ header #titre1{
+    font-size: 60px;
+    color : #ECB05A;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    display: block;  
+    width: 900px;
+    position: relative;
+    margin: auto;
+ }
+ header #titre2{
+    font-size: 20px;
+ }
+
+.card {
+    border: 1px solid #ECD1AA; /*ligne bordure du caroussel*/
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+    /*bar de navigation*/
+    .navbar
+    {
+        width: auto;
+        background-color: #ECB05A;
+        color: #062334;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        border-radius: 50px;
+        align-items: center;
+        
+    }
+    .navbar a *
+    {
+        padding: auto;
+        justify-content: space-between;
+    }
+
+    .navbar a:hover 
+    {
+        background-color: #0B3954;
+        justify-content: space-between;
+        border-radius: 4px;
+        align-items: center;
+    }
+
+   .contentexperiences{
+    justify-content: center;
+    display: block;
+    width: 1200px;
+    margin: auto;
+   }
+
+   .contact { font-family: "Times New Roman", serif; /* footer*/
+    font-size: .90em;
+    font-weight:bold;
+   }
+   
+   #footer {
+    font-size: .60em;
+   }
+  
+   .content-footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+ /* Create three unequal columns that floats next to each other */
+ .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 12%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 76%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+
+/********************************
+* Carousel styles
+*********************************/
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 450px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ECB05A;
+    border-radius: 3px;
+}
+
+
+
+/****************MENU DEROULANT*******************/
+
+#menu-deroulant, #menu-deroulant ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #menu-deroulant li
+    {
+        display:inline-block;
+        margin:auto;
+        position: relative;
+    }
+    
+    #menu-deroulant ul li{
+    display:inherit;
+    background-color: #ECB05A;
+    padding: 10px;
+    text-align:center;
+    }
+
+    #menu-deroulant ul li:hover
+    {
+        border-radius:0;
+        color: #0B3954;
+    }
+
+    #menu-deroulant ul li:last-child
+    {
+        border-radius:0 0 8px 8px;
+    }
+
+    #menu-deroulant ul
+    {
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    color: #0B3954;
+    -moz-transition: .8s all .1s;
+    -webkit-transition: .8s all .1s;
+    transition: .8s all .1s;
+    }
+
+    #menu-deroulant li:hover ul
+    {
+    max-height:160em;
+    }
+
+    /* background des liens menu    s */
+    /*#menu-deroulant li:nth-child(2):hover,*/ #menu-deroulant li:nth-child(2) li{
+    background:#ECB05A;
+    width: auto;
+    height: 5px;
+    
+    }
+    
+    /* les a href */
+    #menu-deroulant a{
+    text-decoration:none;
+    display:block;
+    padding: 6px 35px;
+    color:#fff;
+    font-family:arial;    
+    }
+
+    #menu-deroulant ul a{
+    padding:0px 0;
+    }
+    #menu-deroulant li:hover li a{
+    color:#fff;
+    text-transform:inherit;
+    }
+    #menu-deroulant li:hover a, #menu-deroulant li li:hover a{
+    color:#fff;
+    
+    }
+
+
+    input[type="text"] {
+        width: 300px;
+        height: 30px;
+        }
+
